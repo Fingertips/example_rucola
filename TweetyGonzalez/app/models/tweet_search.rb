@@ -35,10 +35,6 @@ class TweetSearch < OSX::NSObject
   
   def tweet_hashes
     xml = OSX::NSString.alloc.initWithData_encoding(@data, OSX::NSUTF8StringEncoding).to_s
-    if entries = Hash.from_xml(xml)['feed']['entry']
-      entries.is_a?(Array) ? entries : [entries]
-    else
-      []
-    end
+    [Hash.from_xml(xml)['feed']['entry'] || []].flatten
   end
 end
