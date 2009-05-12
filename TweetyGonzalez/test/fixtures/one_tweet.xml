@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:google="http://base.google.com/ns/1.0" xml:lang="en-US" xmlns:openSearch="http://a9.com/-/spec/opensearch/1.1/" xmlns="http://www.w3.org/2005/Atom" xmlns:twitter="http://api.twitter.com/">
+  <id>tag:search.twitter.com,2005:search/@druzonnetje</id>
+  <link type="text/html" rel="alternate" href="http://search.twitter.com/search?q=%40druzonnetje"/>
+  <link type="application/atom+xml" rel="self" href="http://search.twitter.com/search.atom?q=@druzonnetje"/>
+  <title>@druzonnetje - Twitter Search</title>
+  <link type="application/opensearchdescription+xml" rel="search" href="http://search.twitter.com/opensearch.xml"/>
+  <link type="application/atom+xml" rel="refresh" href="http://search.twitter.com/search.atom?q=%40druzonnetje&amp;since_id=1776776504"/>
+  <updated>2009-05-11T12:28:27Z</updated>
+  <openSearch:itemsPerPage>15</openSearch:itemsPerPage>
+  <entry>
+    <id>tag:search.twitter.com,2005:1762578842</id>
+    <published>2009-05-11T12:28:27Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/alloy/statuses/1762578842"/>
+    <title>@druzonnetje @manfreds Sez: Dionne probably likes: http://bit.ly/4hZDB. Now you know :)</title>
+    <content type="html">&lt;a href="http://twitter.com/druzonnetje"&gt;&lt;b&gt;@druzonnetje&lt;/b&gt;&lt;/a&gt; &lt;a href="http://twitter.com/manfreds"&gt;@manfreds&lt;/a&gt; Sez: &#8220;Dionne probably likes: &lt;a href="http://bit.ly/4hZDB"&gt;http://bit.ly/4hZDB&lt;/a&gt;. Now you know :)</content>
+    <updated>2009-05-11T12:28:27Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/75321227/424a9ce662b059c35063b405e160461d_normal.jpeg"/>
+    <twitter:source>&lt;a href="http://twitter.com/"&gt;web&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>alloy (alloy)</name>
+      <uri>http://twitter.com/alloy</uri>
+    </author>
+  </entry>
+</feed>
