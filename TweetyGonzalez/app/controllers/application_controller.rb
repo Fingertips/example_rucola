@@ -1,22 +1,20 @@
 class ApplicationController < Rucola::RCController
-  ib_outlet :main_window
+  kvc_accessor :tweets
+  
+  ib_outlet :main_window, :searchField
   
   def awakeFromNib
-    # All the application delegate methods will be called on this object.
-    OSX::NSApp.delegate = self
-    
-    puts "ApplicationController awoke."
-    puts "Edit: app/controllers/application_controller.rb"
-    puts  "\nIts window is: #{@main_window.inspect}"
+    Tweet.delegate = self
+    @tweets = [].to_ns
   end
   
-  # NSApplication delegate methods
-  def applicationDidFinishLaunching(notification)
-    Kernel.puts "\nApplication finished launching."
+  def search(sender)
+    log.debug "Start search for `#{@searchField.stringValue}'"
+    Tweet.search(@searchField.stringValue)
   end
   
-  def applicationWillTerminate(notification)
-    Kernel.puts "\nApplication will terminate."
+  def tweetDidFinishSearch(tweets)
+    @tweets.removeAllObjects
+    @tweets.addObjectsFromArray(tweets)
   end
-  
 end

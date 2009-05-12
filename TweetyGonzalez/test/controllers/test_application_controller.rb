@@ -1,39 +1,50 @@
 require File.expand_path('../../test_helper', __FILE__)
 
-describe 'ApplicationController' do
+describe 'ApplicationController, when awoken from nib,' do
   tests ApplicationController
   
-  # If necessary, you can setup custom objects for the ib_outlets defined in the class.
-  # Note however that by using 'tests ApplicationController' all the outlets will get stubbed
-  # with stubs that respond to every message with nil.
-  #
-  # def after_setup
-  #   ib_outlets :window => mock("Main Window"),
-  #              :tableView => OSX::NSTableView.alloc.init,
-  #              :searchField => OSX::NSSearchField.alloc.init
-  # 
-  #   window.stubs(:title => 'Main Window')
-  #   tableView.addTableColumn OSX::NSTableColumn.alloc.init
-  #   searchField.stringValue = "foo"
-  # end
-  
-  it "should initialize" do
-    controller.should.be.an.instance_of ApplicationController
-  end
-  
-  it "should set itself as the application delegate" do
-    OSX::NSApp.expects(:delegate=).with(controller)
-    controller.ib_outlet(:main_window).expects(:inspect)
+  before do
+    # Setting searchField here doesn't currently work, because the outlet is
+    # being set again from Rucola::TestCase::setup, which should happen
+    ib_outlets :searchField => OSX::NSSearchField.alloc.init,
+               :searchButton => OSX::NSButton.alloc.init
+    
+    searchButton.target = controller
+    searchButton.action = "search:"
+    
     controller.awakeFromNib
   end
   
-  it "should do some stuff when the application has finished launching" do
-    Kernel.expects(:puts)
-    controller.applicationDidFinishLaunching(nil)
+  after do
+    Tweet.delegate = nil
   end
   
-  it "should do some stuff when the application will terminate" do
-    Kernel.expects(:puts)
-    controller.applicationWillTerminate(nil)
+  it "should have an empty KVC accessible #tweets array" do
+    controller.valueForKey("tweets").should == [].to_ns
+  end
+  
+  it "should have assigned itself as the Tweet delegate" do
+    Tweet.delegate.should.be controller
+  end
+  
+  it "should start a search, with the specified query, when the search button is pushed" do
+    ib_outlet :searchField, OSX::NSSearchField.alloc.init
+    searchField.stringValue = "Tweety Gonzaléz"
+    
+    Tweet.expects(:search).with("Tweety Gonzaléz")
+    push_button(searchButton)
+  end
+  
+  it "should _replace_ the contents of the existing @tweets array with the new ones" do
+    tweets = [mock("Tweet 1"), mock("Tweet 2")]
+    controller.tweets.expects(:removeAllObjects)
+    controller.tweetDidFinishSearch(tweets)
+    controller.tweets.should == tweets
+  end
+  
+  private
+  
+  def push_button(button)
+    button.target.send(button.action, button)
   end
 end
