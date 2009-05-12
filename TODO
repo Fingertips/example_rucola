@@ -1,0 +1,8 @@
+* ib_outlets should not be set in setup if they're already set
+* update templates:
+  * change after_setup to before do ... end
+  * change main_window outlet to mainWindow
+* publish new gem
+* remove rubyforge project
+
+* add comments to TweetyGonzalez
