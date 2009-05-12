@@ -15,31 +15,27 @@ describe 'ApplicationController, when awoken from nib,' do
     controller.awakeFromNib
   end
   
-  after do
-    Tweet.delegate = nil
-  end
-  
   it "should have an empty KVC accessible #tweets array" do
     controller.valueForKey("tweets").should == [].to_ns
   end
   
-  it "should have assigned itself as the Tweet delegate" do
-    Tweet.delegate.should.be controller
+  it "should have a TweetSearch instance and assigned itself as the Tweet delegate" do
+    assigns(:tweet_search).should.be.instance_of TweetSearch
+    assigns(:tweet_search).delegate.should.be controller
   end
   
   it "should start a search, with the specified query, when the search button is pushed" do
     ib_outlet :searchField, OSX::NSSearchField.alloc.init
     searchField.stringValue = "Tweety Gonzaléz"
     
-    Tweet.expects(:search).with("Tweety Gonzaléz")
+    assigns(:tweet_search).expects(:search).with("Tweety Gonzaléz")
     push_button(searchButton)
   end
   
-  it "should _replace_ the contents of the existing @tweets array with the new ones" do
+  it "should replace the contents of the existing @tweets array with the new ones" do
     tweets = [mock("Tweet 1"), mock("Tweet 2")]
-    controller.tweets.expects(:removeAllObjects)
     controller.tweetDidFinishSearch(tweets)
-    controller.tweets.should == tweets
+    controller.valueForKey("tweets").should == tweets
   end
   
   private

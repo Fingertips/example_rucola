@@ -13,13 +13,20 @@
 			<string>NSObject</string>
 		</dict>
 		<dict>
+			<key>ACTIONS</key>
+			<dict>
+				<key>search</key>
+				<string>id</string>
+			</dict>
 			<key>CLASS</key>
 			<string>ApplicationController</string>
 			<key>LANGUAGE</key>
 			<string>ObjC</string>
 			<key>OUTLETS</key>
 			<dict>
-				<key>main_window</key>
+				<key>mainWindow</key>
+				<string>id</string>
+				<key>searchField</key>
 				<string>id</string>
 			</dict>
 			<key>SUPERCLASS</key>

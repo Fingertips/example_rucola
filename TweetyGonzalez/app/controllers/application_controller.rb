@@ -1,20 +1,18 @@
 class ApplicationController < Rucola::RCController
   kvc_accessor :tweets
   
-  ib_outlet :main_window, :searchField
+  ib_outlet :mainWindow, :searchField
   
   def awakeFromNib
-    Tweet.delegate = self
-    @tweets = [].to_ns
+    self.tweets = []
+    @tweet_search = TweetSearch.alloc.initWithDelegate(self)
   end
   
   def search(sender)
-    log.debug "Start search for `#{@searchField.stringValue}'"
-    Tweet.search(@searchField.stringValue)
+    @tweet_search.search(@searchField.stringValue)
   end
   
   def tweetDidFinishSearch(tweets)
-    @tweets.removeAllObjects
-    @tweets.addObjectsFromArray(tweets)
+    self.tweets = tweets
   end
 end
