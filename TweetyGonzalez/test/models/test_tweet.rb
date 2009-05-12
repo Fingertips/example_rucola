@@ -46,7 +46,7 @@ describe "Tweet the class" do
     result.should == parts.join
   end
   
-  it "should send an array of result tweets to its delegate once all the search data has been received" do
+  it "should send an array of result Tweet instances to its delegate once all data has been received" do
     tweets = Hash.from_xml(File.read(fixture("tweety_sings.xml")))["feed"]["entry"].map do |attributes|
       Tweet.alloc.initWithHash(attributes)
     end
