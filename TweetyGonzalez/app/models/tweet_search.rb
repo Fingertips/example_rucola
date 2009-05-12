@@ -12,9 +12,7 @@ class TweetSearch < OSX::NSObject
   
   def search(query)
     log.debug "Start search for `#{query}'"
-    url = OSX::NSURL.URLWithString(SEARCH_URL % query)
-    request = OSX::NSURLRequest.requestWithURL(url)
-    @connection = OSX::NSURLConnection.connectionWithRequest_delegate(request, self)
+    @connection = OSX::NSURLConnection.connectionWithRequest_delegate(request(query), self)
     @data = OSX::NSMutableData.data
   end
   
@@ -24,10 +22,23 @@ class TweetSearch < OSX::NSObject
   end
   
   def connectionDidFinishLoading(connection)
-    xml = OSX::NSString.alloc.initWithData_encoding(@data, OSX::NSUTF8StringEncoding).to_s
-    entries = Hash.from_xml(xml)['feed']['entry']
-    tweets = entries.nil? ? [] : entries.map { |attributes| Tweet.alloc.initWithHash(attributes) }
+    tweets = tweet_hashes.map { |attributes| Tweet.alloc.initWithHash(attributes) }
     log.debug "Finished search, found #{tweets.length} tweets."
     @delegate.tweetDidFinishSearch(tweets)
+  end
+  
+  private
+  
+  def request(query)
+    OSX::NSURLRequest.requestWithURL(OSX::NSURL.URLWithString(SEARCH_URL % query))
+  end
+  
+  def tweet_hashes
+    xml = OSX::NSString.alloc.initWithData_encoding(@data, OSX::NSUTF8StringEncoding).to_s
+    if entries = Hash.from_xml(xml)['feed']['entry']
+      entries.is_a?(Array) ? entries : [entries]
+    else
+      []
+    end
   end
 end

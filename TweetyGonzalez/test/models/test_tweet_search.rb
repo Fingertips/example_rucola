@@ -65,4 +65,16 @@ describe "TweetSearch" do
     @delegate.expects(:tweetDidFinishSearch).with([])
     @tweet_search.connectionDidFinishLoading(nil)
   end
+  
+  it "should not break when only one tweet was found" do
+    tweet = Tweet.alloc.initWithHash({
+      "author" => { "name" => "alloy (alloy)" },
+      "title" => "@druzonnetje @manfreds Sez: Dionne probably likes: http://bit.ly/4hZDB. Now you know :)"
+    })
+    
+    @delegate.expects(:tweetDidFinishSearch).with([tweet])
+    
+    @tweet_search.data = OSX::NSData.dataWithContentsOfFile(fixture("one_tweet.xml"))
+    @tweet_search.connectionDidFinishLoading(nil)
+  end
 end
