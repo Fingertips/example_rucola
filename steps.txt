@@ -1,0 +1,8 @@
+rucola TweetyGonzalez
+rake
+
+# Create model
+./script/generate --help
+./script/generate simple_model tweet
+
+# Run tweet test

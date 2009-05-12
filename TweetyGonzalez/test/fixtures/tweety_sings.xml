@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:google="http://base.google.com/ns/1.0" xml:lang="en-US" xmlns:openSearch="http://a9.com/-/spec/opensearch/1.1/" xmlns="http://www.w3.org/2005/Atom" xmlns:twitter="http://api.twitter.com/">
+  <id>tag:search.twitter.com,2005:search/rubyonosx</id>
+  <link type="text/html" rel="alternate" href="http://search.twitter.com/search?q=rubyonosx"/>
+  <link type="application/atom+xml" rel="self" href="http://search.twitter.com/search.atom?q=rubyonosx"/>
+  <title>rubyonosx - Twitter Search</title>
+  <link type="application/opensearchdescription+xml" rel="search" href="http://search.twitter.com/opensearch.xml"/>
+  <link type="application/atom+xml" rel="refresh" href="http://search.twitter.com/search.atom?q=rubyonosx&amp;since_id=1773037430"/>
+  <twitter:warning>since_id removed for pagination.</twitter:warning>
+  <updated>2009-05-11T21:10:50Z</updated>
+  <openSearch:itemsPerPage>15</openSearch:itemsPerPage>
+  <link type="application/atom+xml" rel="next" href="http://search.twitter.com/search.atom?max_id=1773037430&amp;page=2&amp;q=rubyonosx"/>
+  <entry>
+    <id>tag:search.twitter.com,2005:1766855402</id>
+    <published>2009-05-11T21:10:50Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/thijs/statuses/1766855402"/>
+    <title>If you would like to follow the http://rubyonosx.com speakers on Twitter: @rich_kilmer, @Psychs, @alloy, @ninh, @jlnr, and @koenbok.</title>
+    <content type="html">If you would like to follow the &lt;a href="http://rubyonosx.com"&gt;http://&lt;b&gt;rubyonosx&lt;/b&gt;.com&lt;/a&gt; speakers on Twitter: &lt;a href="http://twitter.com/rich_kilmer"&gt;@rich_kilmer&lt;/a&gt;, &lt;a href="http://twitter.com/Psychs"&gt;@Psychs&lt;/a&gt;, &lt;a href="http://twitter.com/alloy"&gt;@alloy&lt;/a&gt;, &lt;a href="http://twitter.com/ninh"&gt;@ninh&lt;/a&gt;, &lt;a href="http://twitter.com/jlnr"&gt;@jlnr&lt;/a&gt;, and &lt;a href="http://twitter.com/koenbok"&gt;@koenbok&lt;/a&gt;.</content>
+    <updated>2009-05-11T21:10:50Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/25049952/avatar_normal.png"/>
+    <twitter:source>&lt;a href="http://www.atebits.com/"&gt;Tweetie&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>thijs (Thijs van der Vossen)</name>
+      <uri>http://twitter.com/thijs</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:1766778132</id>
+    <published>2009-05-11T21:02:05Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/fngtps/statuses/1766778132"/>
+    <title>Julian Raschke (@jlnr) will join Ninh&#8217;s RubyStein demo to present his Gosu game development library at http://rubyonosx.com</title>
+    <content type="html">Julian Raschke (&lt;a href="http://twitter.com/jlnr"&gt;@jlnr&lt;/a&gt;) will join Ninh&#8217;s RubyStein demo to present his Gosu game development library at &lt;a href="http://rubyonosx.com"&gt;http://&lt;b&gt;rubyonosx&lt;/b&gt;.com&lt;/a&gt;</content>
+    <updated>2009-05-11T21:02:05Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/135808268/avatar_normal.png"/>
+    <twitter:source>&lt;a href="http://www.atebits.com/"&gt;Tweetie&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>fngtps (Fingertips)</name>
+      <uri>http://twitter.com/fngtps</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:1766567377</id>
+    <published>2009-05-11T20:38:09Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/fngtps/statuses/1766567377"/>
+    <title>Koen Bok from Sofa (@koenbok) will share experiences with building and shipping a commercial Cocoa app in Python at http://rubyonosx.com</title>
+    <content type="html">Koen Bok from Sofa (&lt;a href="http://twitter.com/koenbok"&gt;@koenbok&lt;/a&gt;) will share experiences with building and shipping a commercial Cocoa app in Python at &lt;a href="http://rubyonosx.com"&gt;http://&lt;b&gt;rubyonosx&lt;/b&gt;.com&lt;/a&gt;</content>
+    <updated>2009-05-11T20:38:09Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/135808268/avatar_normal.png"/>
+    <twitter:source>&lt;a href="http://www.atebits.com/"&gt;Tweetie&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>fngtps (Fingertips)</name>
+      <uri>http://twitter.com/fngtps</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:1765850160</id>
+    <published>2009-05-11T19:16:22Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/thijs/statuses/1765850160"/>
+    <title>@peepcode How about a discount for http//rubyonosx.com attendees?</title>
+    <content type="html">&lt;a href="http://twitter.com/peepcode"&gt;@peepcode&lt;/a&gt; How about a discount for http//&lt;b&gt;rubyonosx&lt;/b&gt;.com attendees?</content>
+    <updated>2009-05-11T19:16:22Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/25049952/avatar_normal.png"/>
+    <twitter:source>&lt;a href="http://www.atebits.com/"&gt;Tweetie&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>thijs (Thijs van der Vossen)</name>
+      <uri>http://twitter.com/thijs</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:1755354698</id>
+    <published>2009-05-10T15:55:38Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/freaklikeme/statuses/1755354698"/>
+    <title>@jweiss if you can't make it, yes I like to. Just have to checkback with our customers. #rubyonosx #ticket</title>
+    <content type="html">&lt;a href="http://twitter.com/jweiss"&gt;@jweiss&lt;/a&gt; if you can't make it, yes I like to. Just have to checkback with our customers. &lt;a href="http://search.twitter.com/search?q=%23rubyonosx"&gt;#&lt;b&gt;rubyonosx&lt;/b&gt;&lt;/a&gt; &lt;a href="http://search.twitter.com/search?q=%23ticket"&gt;#ticket&lt;/a&gt;</content>
+    <updated>2009-05-10T15:55:38Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/61513029/DSC_0038_normal.jpg"/>
+    <twitter:source>&lt;a href="http://twitterfon.net/"&gt;TwitterFon&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>freaklikeme (Thilo)</name>
+      <uri>http://twitter.com/freaklikeme</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:1755125038</id>
+    <published>2009-05-10T15:19:27Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/jweiss/statuses/1755125038"/>
+    <title>@freaklikeme I'm not sure I'm gonna make it to #rubyonosx - if so, do you want the ticket?</title>
+    <content type="html">&lt;a href="http://twitter.com/freaklikeme"&gt;@freaklikeme&lt;/a&gt; I'm not sure I'm gonna make it to &lt;a href="http://search.twitter.com/search?q=%23rubyonosx"&gt;#&lt;b&gt;rubyonosx&lt;/b&gt;&lt;/a&gt; - if so, do you want the ticket?</content>
+    <updated>2009-05-10T15:19:27Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/51860772/Picture_1_normal.png"/>
+    <twitter:source>&lt;a href="http://www.nambu.com"&gt;Nambu&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>jweiss (Jonathan Weiss)</name>
+      <uri>http://twitter.com/jweiss</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:1754468308</id>
+    <published>2009-05-10T13:22:32Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/tombeckenham/statuses/1754468308"/>
+    <title>RT @fngtps We&#8217;ll release the http://rubyonosx.com session videos as 720p HD when we have 1000 followers. It&#8217;s in your hands. ;)</title>
+    <content type="html">RT &lt;a href="http://twitter.com/fngtps"&gt;@fngtps&lt;/a&gt; We&#8217;ll release the &lt;a href="http://rubyonosx.com"&gt;http://&lt;b&gt;rubyonosx&lt;/b&gt;.com&lt;/a&gt; session videos as 720p HD when we have 1000 followers. It&#8217;s in your hands. ;)</content>
+    <updated>2009-05-10T13:22:32Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/186094122/TwitterPicYork_normal.jpg"/>
+    <twitter:source>&lt;a href="http://www.atebits.com/"&gt;Tweetie&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>tombeckenham (Tom Beckenham)</name>
+      <uri>http://twitter.com/tombeckenham</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:1748748343</id>
+    <published>2009-05-09T19:53:38Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/patrykpeszko/statuses/1748748343"/>
+    <title>@paukul mir muss amsterdam und rubyonosx reichen :/</title>
+    <content type="html">&lt;a href="http://twitter.com/paukul"&gt;@paukul&lt;/a&gt; mir muss amsterdam und &lt;b&gt;rubyonosx&lt;/b&gt; reichen :/</content>
+    <updated>2009-05-09T19:53:38Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/53731515/auge_normal.jpg"/>
+    <twitter:source>&lt;a href="http://www.nambu.com"&gt;Nambu&lt;/a&gt;</twitter:source>
+    <twitter:lang>de</twitter:lang>
+    <author>
+      <name>patrykpeszko (Patryk Peszko)</name>
+      <uri>http://twitter.com/patrykpeszko</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:1747095443</id>
+    <published>2009-05-09T16:00:54Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/patrykpeszko/statuses/1747095443"/>
+    <title>We&#8217;ll release the http://rubyonosx.com session videos as 720p HD when we have 1000 followers. It&#8217;s in your hands. ;) (via @fngtps)</title>
+    <content type="html">We&#8217;ll release the &lt;a href="http://rubyonosx.com"&gt;http://&lt;b&gt;rubyonosx&lt;/b&gt;.com&lt;/a&gt; session videos as 720p HD when we have 1000 followers. It&#8217;s in your hands. ;) (via &lt;a href="http://twitter.com/fngtps"&gt;@fngtps&lt;/a&gt;)</content>
+    <updated>2009-05-09T16:00:54Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/53731515/auge_normal.jpg"/>
+    <twitter:source>&lt;a href="http://twitterrific.com"&gt;Twitterrific&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>patrykpeszko (Patryk Peszko)</name>
+      <uri>http://twitter.com/patrykpeszko</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:1746830019</id>
+    <published>2009-05-09T15:22:44Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/bketelsen/statuses/1746830019"/>
+    <title>We&#8217;ll release the http://rubyonosx.com session videos as 720p HD when we have 1000 followers. It&#8217;s in your hands. ;) (via @fngtps)</title>
+    <content type="html">We&#8217;ll release the &lt;a href="http://rubyonosx.com"&gt;http://&lt;b&gt;rubyonosx&lt;/b&gt;.com&lt;/a&gt; session videos as 720p HD when we have 1000 followers. It&#8217;s in your hands. ;) (via &lt;a href="http://twitter.com/fngtps"&gt;@fngtps&lt;/a&gt;)</content>
+    <updated>2009-05-09T15:22:44Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/49936032/brian_normal.jpg"/>
+    <twitter:source>&lt;a href="http://www.atebits.com/"&gt;Tweetie&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>bketelsen (Brian Ketelsen)</name>
+      <uri>http://twitter.com/bketelsen</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:1746582100</id>
+    <published>2009-05-09T14:45:09Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/bpaschen/statuses/1746582100"/>
+    <title>Let&#8217;s do it like this: We&#8217;ll release the http://rubyonosx.com session videos as 720p HD when we have 1000 followers. (via @fngtps)</title>
+    <content type="html">Let&#8217;s do it like this: We&#8217;ll release the &lt;a href="http://rubyonosx.com"&gt;http://&lt;b&gt;rubyonosx&lt;/b&gt;.com&lt;/a&gt; session videos as 720p HD when we have 1000 followers. (via &lt;a href="http://twitter.com/fngtps"&gt;@fngtps&lt;/a&gt;)</content>
+    <updated>2009-05-09T14:45:09Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/131956343/ranseier_small_normal.JPG"/>
+    <twitter:source>&lt;a href="http://www.atebits.com/"&gt;Tweetie&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>bpaschen (Bjoern Paschen)</name>
+      <uri>http://twitter.com/bpaschen</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:1746375073</id>
+    <published>2009-05-09T14:11:02Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/michelegera/statuses/1746375073"/>
+    <title>RT @fngtps: We&#8217;ll release the http://rubyonosx.com session videos as 720p HD when we have 1000 followers. It&#8217;s in your hands. ;)</title>
+    <content type="html">RT &lt;a href="http://twitter.com/fngtps"&gt;@fngtps&lt;/a&gt;: We&#8217;ll release the &lt;a href="http://rubyonosx.com"&gt;http://&lt;b&gt;rubyonosx&lt;/b&gt;.com&lt;/a&gt; session videos as 720p HD when we have 1000 followers. It&#8217;s in your hands. ;)</content>
+    <updated>2009-05-09T14:11:02Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/69266587/michele_bw_normal.jpg"/>
+    <twitter:source>&lt;a href="http://www.atebits.com/"&gt;Tweetie&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>michelegera (Michele Gerarduzzi)</name>
+      <uri>http://twitter.com/michelegera</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:1746358004</id>
+    <published>2009-05-09T14:08:12Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/fngtps/statuses/1746358004"/>
+    <title>Let&#8217;s do it like this: We&#8217;ll release the http://rubyonosx.com session videos as 720p HD when we have 1000 followers. It&#8217;s in your hands. ;)</title>
+    <content type="html">Let&#8217;s do it like this: We&#8217;ll release the &lt;a href="http://rubyonosx.com"&gt;http://&lt;b&gt;rubyonosx&lt;/b&gt;.com&lt;/a&gt; session videos as 720p HD when we have 1000 followers. It&#8217;s in your hands. ;)</content>
+    <updated>2009-05-09T14:08:12Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/135808268/avatar_normal.png"/>
+    <twitter:source>&lt;a href="http://www.atebits.com/"&gt;Tweetie&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>fngtps (Fingertips)</name>
+      <uri>http://twitter.com/fngtps</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:1746154106</id>
+    <published>2009-05-09T13:31:23Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/mocra/statuses/1746154106"/>
+    <title>@fngtps we'll help with seeding of the 720p #rubyonosx videos ^NW</title>
+    <content type="html">&lt;a href="http://twitter.com/fngtps"&gt;@fngtps&lt;/a&gt; we'll help with seeding of the 720p &lt;a href="http://search.twitter.com/search?q=%23rubyonosx"&gt;#&lt;b&gt;rubyonosx&lt;/b&gt;&lt;/a&gt; videos ^NW</content>
+    <updated>2009-05-09T13:31:23Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/77542140/logo-square_normal.png"/>
+    <twitter:source>&lt;a href="http://tweetbots.com"&gt;Tweetbots&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>mocra (Mocra)</name>
+      <uri>http://twitter.com/mocra</uri>
+    </author>
+  </entry>
+  <entry>
+    <id>tag:search.twitter.com,2005:1746100179</id>
+    <published>2009-05-09T13:20:53Z</published>
+    <link type="text/html" rel="alternate" href="http://twitter.com/fngtps/statuses/1746100179"/>
+    <title>So, the http://rubyonosx.com sessions will be videotaped. Would you like to get them as HD 720p torrents?</title>
+    <content type="html">So, the &lt;a href="http://rubyonosx.com"&gt;http://&lt;b&gt;rubyonosx&lt;/b&gt;.com&lt;/a&gt; sessions will be videotaped. Would you like to get them as HD 720p torrents?</content>
+    <updated>2009-05-09T13:20:53Z</updated>
+    <link type="image/png" rel="image" href="http://s3.amazonaws.com/twitter_production/profile_images/135808268/avatar_normal.png"/>
+    <twitter:source>&lt;a href="http://birdhouseapp.com"&gt;Birdhouse&lt;/a&gt;</twitter:source>
+    <twitter:lang>en</twitter:lang>
+    <author>
+      <name>fngtps (Fingertips)</name>
+      <uri>http://twitter.com/fngtps</uri>
+    </author>
+  </entry>
+</feed>

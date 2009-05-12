@@ -10,3 +10,13 @@ require 'rucola/test_helper'
 require 'rucola/test_case'
 
 require File.expand_path('../../config/boot', __FILE__)
+
+FIXTURES = File.expand_path("../fixtures", __FILE__)
+
+class Test::Unit::TestCase
+  private
+  
+  def fixture(name)
+    File.join(FIXTURES, name)
+  end
+end
