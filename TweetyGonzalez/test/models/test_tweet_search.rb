@@ -1,9 +1,10 @@
 require File.expand_path('../../test_helper', __FILE__)
 
-describe "Tweet the class" do
+describe "TweetSearch" do
   before do
     @delegate = mock("Delegate")
     @tweet_search = TweetSearch.alloc.initWithDelegate(@delegate)
+    @tweet_search.data = OSX::NSMutableData.data
     
     OSX::NSURLConnection.stubs(:connectionWithRequest_delegate)
   end
@@ -32,9 +33,7 @@ describe "Tweet the class" do
     @tweet_search.data.should.not.be data_before
   end
   
-  it "should concatenate received data to Tweet.data" do
-    @tweet_search.data = OSX::NSMutableData.data
-    
+  it "should concatenate received data to @data" do
     parts = [
       "lrz: Hah, Tweety Gonzaléz-rolled ",
       "Ninh while he was preparing to Patrick Hernandez-roll me! ",
@@ -58,6 +57,12 @@ describe "Tweet the class" do
     @delegate.expects(:tweetDidFinishSearch).with(tweets)
     
     @tweet_search.data = OSX::NSData.dataWithContentsOfFile(fixture("tweety_sings.xml"))
+    @tweet_search.connectionDidFinishLoading(nil)
+  end
+  
+  it "should send an empty array to the delegate if no tweet were found" do
+    @tweet_search.data = OSX::NSData.dataWithContentsOfFile(fixture("no_tweets.xml"))
+    @delegate.expects(:tweetDidFinishSearch).with([])
     @tweet_search.connectionDidFinishLoading(nil)
   end
 end

@@ -25,7 +25,8 @@ class TweetSearch < OSX::NSObject
   
   def connectionDidFinishLoading(connection)
     xml = OSX::NSString.alloc.initWithData_encoding(@data, OSX::NSUTF8StringEncoding).to_s
-    tweets = Hash.from_xml(xml)['feed']['entry'].map { |attributes| Tweet.alloc.initWithHash(attributes) }
+    entries = Hash.from_xml(xml)['feed']['entry']
+    tweets = entries.nil? ? [] : entries.map { |attributes| Tweet.alloc.initWithHash(attributes) }
     log.debug "Finished search, found #{tweets.length} tweets."
     @delegate.tweetDidFinishSearch(tweets)
   end
