@@ -32,4 +32,6 @@ Rucola::Dependencies.run do
   dependency 'activesupport' do
     exception 'xml-simple', 'xmlsimple'
   end
+  
+  dependency 'active_support/xml_mini'
 end
