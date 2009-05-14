@@ -5,4 +5,18 @@ rake
 ./script/generate --help
 ./script/generate simple_model tweet
 
-# Run tweet test
+# reloader:
+- search for "patrick hernandez"
+  - notice nothing happens, which is because of the space which gets added to the url and thus breaks
+  - tweet_search.rb: query = query.gsub(' ', '+')
+  - search again and see it works
+  - notice that author names contain "nick (full name)"
+  - tweet.rb update author: .split('(').first.strip
+  - tweet.rb update title: .gsub(/patrick hernandez/i, "Tweety Gonzalez")
+
+# debugger:
+tweet_search.rb add "debugger" statement to inspect the query lvar
+- rake
+- help
+- v l
+- c
