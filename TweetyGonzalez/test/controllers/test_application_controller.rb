@@ -4,8 +4,6 @@ describe 'ApplicationController, when awoken from nib,' do
   tests ApplicationController
   
   before do
-    # Setting searchField here doesn't currently work, because the outlet is
-    # being set again from Rucola::TestCase::setup, which should happen
     ib_outlets :searchField => OSX::NSSearchField.alloc.init
     
     @tweets = [mock("Tweet 1"), mock("Tweet 2")]
@@ -27,7 +25,6 @@ describe 'ApplicationController, when awoken from nib,' do
   end
   
   it "should start a search with the query specified on the searchField" do
-    ib_outlet :searchField, OSX::NSSearchField.alloc.init
     searchField.stringValue = "Tweety Gonzaléz"
     
     assigns(:tweet_search).expects(:search).with("Tweety Gonzaléz")
