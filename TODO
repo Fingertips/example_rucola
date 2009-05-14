@@ -1,3 +1,4 @@
+# instead of using Test::Unit::TestCase #setup and #teardown, override #run
 * ib_outlets should not be set in setup if they're already set
 * update templates:
   * change after_setup to before do ... end
