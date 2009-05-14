@@ -10,6 +10,6 @@ Rucola::Initializer.run do |config|
   # Turning on the reloader will start a fsevent loop which watches the files in app/ for changes
   # and try to reload any classes that have been saved while the app is running.
   # It could however lead to erratic behaviour and it's therefor turned off by default.
-  #
-  # config.use_reloader = true
+  
+  config.use_reloader = true
 end
