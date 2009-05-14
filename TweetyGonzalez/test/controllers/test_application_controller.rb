@@ -6,11 +6,7 @@ describe 'ApplicationController, when awoken from nib,' do
   before do
     # Setting searchField here doesn't currently work, because the outlet is
     # being set again from Rucola::TestCase::setup, which should happen
-    ib_outlets :searchField => OSX::NSSearchField.alloc.init,
-               :searchButton => OSX::NSButton.alloc.init
-    
-    searchButton.target = controller
-    searchButton.action = "search:"
+    ib_outlets :searchField => OSX::NSSearchField.alloc.init
     
     controller.awakeFromNib
   end
@@ -24,23 +20,17 @@ describe 'ApplicationController, when awoken from nib,' do
     assigns(:tweet_search).delegate.should.be controller
   end
   
-  it "should start a search, with the specified query, when the search button is pushed" do
+  it "should start a search with the query specified on the searchField" do
     ib_outlet :searchField, OSX::NSSearchField.alloc.init
     searchField.stringValue = "Tweety Gonzaléz"
     
     assigns(:tweet_search).expects(:search).with("Tweety Gonzaléz")
-    push_button(searchButton)
+    controller.search(nil)
   end
   
   it "should replace the contents of the existing @tweets array with the new ones" do
     tweets = [mock("Tweet 1"), mock("Tweet 2")]
     controller.tweetDidFinishSearch(tweets)
     controller.valueForKey("tweets").should == tweets
-  end
-  
-  private
-  
-  def push_button(button)
-    button.target.send(button.action, button)
   end
 end
